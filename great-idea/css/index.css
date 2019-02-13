@@ -167,7 +167,12 @@ h5 {
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 50px;
+}
+
+header nav a:first-child {
+  padding-left: 0;
 }
 
 header nav a {
