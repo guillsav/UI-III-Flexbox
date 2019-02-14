@@ -136,7 +136,8 @@ table {
 html,
 body {
   height: 100%;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: #5e5e5e;
 }
 
 h1,
@@ -144,9 +145,11 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Bangers', cursive;
+  font-family: 'Pacifico', cursive;
   letter-spacing: 1px;
   margin-bottom: 15px;
+  font-size: 24px;
+  color: black;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
@@ -161,8 +164,8 @@ h5 {
 
 /* Button */
 .btn-learn-more {
-  background: #f9f9f9;
-  border: 1px solid black;
+  background: #eaeaea;
+  border: none;
   width: 60%;
   height: 32px;
   border-radius: 5px;
@@ -174,12 +177,17 @@ h5 {
   display: flex;
   flex-direction: column;
   width: 200px;
-  background: #ededed;
-  border: 1px solid black;
+  background: #fff;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 /* line-height */
-.t-l-h {
+.t-l-h-regular {
+  line-height: 1.5;
+}
+
+.t-l-h-contained {
   line-height: 1.35;
 }
 
@@ -191,20 +199,23 @@ header {
   margin-bottom: 50px;
 }
 
-header nav a:first-child {
-  padding-left: 0;
+header nav {
+  display: flex;
+  justify-content: flex-start;
+  width: 450px;
 }
 
 header nav a {
+  font-weight: 500;
   text-decoration: none;
   color: rgb(155, 155, 155);
-  padding: 0 30px;
-  transition: color 0.2s;
+  margin-right: 50px;
+  transition: color 0.3s;
 }
 
 header nav a:hover {
   color: black;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 header .logo {
@@ -217,7 +228,7 @@ header .logo {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
 }
 
 .top-content .call-to-action {
@@ -231,18 +242,26 @@ header .logo {
 
 .call-to-action h1 {
   width: 220px;
-  font-size: 60px;
+  font-family: 'Pacifico', cursive;
+  font-size: 52px;
   text-align: center;
   letter-spacing: 2px;
+  line-height: 1.2;
+  margin-bottom: 30px;
 }
 .call-to-action .get-started {
-  background: none;
-  border: 1px solid #000000;
+  background: #eaeaea;
+  border: none;
+  color: rgb(0, 0, 0, 0.8);
   border-radius: 5px;
   font-size: 18px;
   width: 200px;
-  height: 38px;
+  height: 42px;
   padding: 0;
+}
+
+.call-to-action .get-started:hover {
+  color: #fff;
 }
 
 .hero-img {
@@ -255,8 +274,13 @@ header .logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
   margin-bottom: 30px;
+}
+
+.main-content h2 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
 }
 
 .features {
@@ -266,6 +290,7 @@ header .logo {
 
 .middle-img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .about {
@@ -293,6 +318,11 @@ header .logo {
   margin-bottom: 20px;
 }
 
+.contact h2 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
+
 address {
   margin: 20px 0;
 }
@@ -309,13 +339,18 @@ address {
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 40px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
   margin-bottom: 40px;
+}
+
+.description .services-header-img {
+  border-radius: 5px;
 }
 
 .description h1 {
   font-size: 30px;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 /* Services-list section */
@@ -323,7 +358,7 @@ address {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
   margin-bottom: 40px;
 }
 
@@ -332,8 +367,9 @@ address {
   flex-direction: column;
   width: 48%;
   padding: 20px 20px 0 20px;
-  background: #ededed;
-  border: 1px solid black;
+  background: #fff;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
   margin-bottom: 40px;
 }
 
@@ -342,13 +378,23 @@ address {
 }
 
 .box .btn-learn-more {
-  background: #f9f9f9;
-  border: 1px solid black;
+  background: #eaeaea;
+  border: none;
   width: 28%;
   height: 32px;
   border-radius: 5px;
   padding: 0;
   margin: 20px 0;
+}
+
+.box .btn-learn-more:hover {
+  border-radius: 5px;
+}
+
+.box h2 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 /* bottom-content section */
@@ -366,9 +412,17 @@ address {
   width: 45%;
 }
 
-.some-facts li {
-  list-style: square;
-  margin: 20px;
+.some-facts ul li {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.some-facts ul li::before {
+  content: '\2012';
+  color: #c7c7c7;
+  font-weight: bold;
+  display: inline-block;
+  width: 24px;
 }
 
 .bottom-content .right {
@@ -377,12 +431,17 @@ address {
 
 .bottom-content .right img {
   width: 100%;
+  border-radius: 5px;
 }
 
 /* About Us Page  */
 .meet-us {
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.meet-us .smilley {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .meet-the-team {
@@ -390,7 +449,7 @@ address {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 30px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
 }
 
 .meet-the-team .card {
@@ -404,14 +463,19 @@ address {
 }
 
 .meet-the-team .card h2 {
-  padding-left: 20px;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  padding: 0 20px;
+  font-size: 16px;
 }
 
 .meet-the-team .card h3 {
-  padding-left: 20px;
+  padding: 0 20px;
+  font-size: 13px;
   line-height: 1.25;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #9a9a9a;
 }
 
 .meet-the-team .card p {
