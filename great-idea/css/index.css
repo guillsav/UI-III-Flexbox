@@ -280,6 +280,19 @@ header .logo {
   padding: 30px 0;
 }
 
+/* Contact section */
+.contact {
+  margin-bottom: 20px;
+}
+
+address {
+  margin: 20px 0;
+}
+
+.phone {
+  margin: 20px 0;
+}
+
 /* --- Services Page --- */
 
 /* Description section */
@@ -347,19 +360,6 @@ header .logo {
 .some-facts li {
   list-style: square;
   margin: 20px;
-}
-
-/* Contact section */
-.contact {
-  margin-bottom: 20px;
-}
-
-address {
-  margin: 20px 0;
-}
-
-.phone {
-  margin: 20px 0;
 }
 
 /* About Us Page  */
