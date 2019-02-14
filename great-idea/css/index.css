@@ -233,7 +233,7 @@ header .logo {
   width: 220px;
   font-size: 60px;
   text-align: center;
-  /* letter-spacing: 2px; */
+  letter-spacing: 2px;
 }
 .call-to-action .get-started {
   background: none;
@@ -355,19 +355,28 @@ address {
 .bottom-content {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 40px;
 }
 
 .bottom-content .some-facts {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 45%;
 }
 
 .some-facts li {
   list-style: square;
   margin: 20px;
+}
+
+.bottom-content .right {
+  width: 460.8px;
+}
+
+.bottom-content .right img {
+  width: 100%;
 }
 
 /* About Us Page  */
