@@ -199,6 +199,12 @@ header nav a {
   text-decoration: none;
   color: rgb(155, 155, 155);
   padding: 0 30px;
+  transition: color 0.2s;
+}
+
+header nav a:hover {
+  color: black;
+  font-weight: 900;
 }
 
 header .logo {
@@ -230,8 +236,9 @@ header .logo {
   /* letter-spacing: 2px; */
 }
 .call-to-action .get-started {
-  background: white;
-  border: 1px solid #616161;
+  background: none;
+  border: 1px solid #000000;
+  border-radius: 5px;
   font-size: 18px;
   width: 200px;
   height: 38px;
@@ -247,6 +254,7 @@ header .logo {
 .main-content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   border-bottom: 1px solid black;
   margin-bottom: 30px;
 }
@@ -266,17 +274,17 @@ header .logo {
 }
 
 .services {
-  width: 33%;
-  padding: 30px 0;
+  width: 31%;
+  padding: 30px 0px;
 }
 
 .product {
-  width: 33%;
-  padding: 30px 0;
+  width: 31%;
+  padding: 30px 0px;
 }
 
 .vision {
-  width: 33%;
+  width: 31%;
   padding: 30px 0;
 }
 
@@ -315,7 +323,7 @@ address {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   margin-bottom: 40px;
 }
 
@@ -373,7 +381,7 @@ address {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 30px;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
 .meet-the-team .card {
