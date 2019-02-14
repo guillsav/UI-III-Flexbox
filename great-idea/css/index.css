@@ -345,6 +345,7 @@ address {
 
 .description .services-header-img {
   border-radius: 5px;
+  height: 200px;
 }
 
 .description h1 {
