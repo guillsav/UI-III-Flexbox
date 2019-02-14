@@ -403,6 +403,7 @@ address {
 }
 
 .meet-the-team .card button {
+  width: 80%;
   margin: auto;
   margin-bottom: 20px;
 }
