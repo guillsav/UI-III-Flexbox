@@ -460,6 +460,7 @@ address {
 .meet-the-team .card img {
   width: 100%;
   margin-bottom: 20px;
+  border-radius: 4px 4px 0 0;
 }
 
 .meet-the-team .card h2 {
