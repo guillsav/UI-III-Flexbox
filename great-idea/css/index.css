@@ -159,6 +159,26 @@ h5 {
 
 /* Utility */
 
+/* Button */
+.btn-learn-more {
+  background: #f9f9f9;
+  border: 1px solid black;
+  width: 60%;
+  height: 32px;
+  border-radius: 5px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background: #ededed;
+  border: 1px solid black;
+}
+
+/* line-height */
 .t-l-h {
   line-height: 1.35;
 }
@@ -340,6 +360,50 @@ address {
 
 .phone {
   margin: 20px 0;
+}
+
+/* About Us Page  */
+.meet-us {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.meet-the-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 2px solid black;
+}
+
+.meet-the-team .card {
+  width: 22%;
+  margin-bottom: 40px;
+}
+
+.meet-the-team .card img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.meet-the-team .card h2 {
+  padding-left: 20px;
+}
+
+.meet-the-team .card h3 {
+  padding-left: 20px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 800;
+}
+
+.meet-the-team .card p {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.meet-the-team .card button {
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 /* Footer section */
